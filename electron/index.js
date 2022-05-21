@@ -39,7 +39,7 @@ function main(){
 
     //Funcion para enviar datos de la lectura por el puerto serial
     setInterval(() => {
-        window.webContents.send("velocidad", serialData)
+        window.webContents.send("dataSerial", serialData)
     }, 100);
 
 }

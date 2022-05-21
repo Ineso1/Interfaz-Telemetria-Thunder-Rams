@@ -4,7 +4,7 @@ const {platform, cpus, totalmem} = require("os")
 
 //callback para transferencia de datos entre archivos index.js --> menu.js
 const API = {
-    onCount: (callback) => ipcRenderer.on("velocidad",(event, args) => {
+    onCount: (callback) => ipcRenderer.on("dataSerial",(event, args) => {
         callback(args);
     })
 }
