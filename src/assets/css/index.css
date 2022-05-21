@@ -137,3 +137,10 @@ body{
     border-radius: 50%;
     background-color: var(--gray_thunder);
 }
+
+
+#map {
+    height: 400px;
+    width: 100%;
+  }
+  
