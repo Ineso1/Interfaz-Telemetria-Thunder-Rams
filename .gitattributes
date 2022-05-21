@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+C:/Users/nessy/Desktop/Interfaz_grafica_telemetria/Interfaz-Telemetria-Thunder-Rams/node_modules filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text

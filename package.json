@@ -1,0 +1,15 @@
+{
+  "name": "interfaz-telemetria-thunder-rams",
+  "version": "1.0.0",
+  "description": "interfaz telemetria",
+  "main": "index.js",
+  "scripts": {
+    "dev": "electron electron/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ines Alejandro Garcia Mosqueda",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^18.2.4"
+  }
+}
