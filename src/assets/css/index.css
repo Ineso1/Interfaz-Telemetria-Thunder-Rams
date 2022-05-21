@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --lg: 2.2rem;
+    --md: 2rem;
+    --sm: 1.8rem;
+    --white_thunder: #fff;
+    --blue_thunder: #008e91;
+    --light_blue_thunder: #0ec4bf;
+    --gray_thunder: #304041;
+    --dark_gray_thunder: #1e2324;
+}
+
+
+body{
+    color: rgb(0, 0, 0);
+    background-color: var(--gray_thunder);
+}
