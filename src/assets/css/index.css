@@ -24,3 +24,116 @@ body{
     color: rgb(0, 0, 0);
     background-color: var(--gray_thunder);
 }
+
+
+#header-container{
+    z-index: 10000;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--white_thunder);
+}
+
+#logoThunder{
+    height:100px;
+}
+
+.box-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: var(--white_thunder);
+}
+
+#velocimetro{
+    position: absolute;
+    display: block;
+    font-weight: bolder;
+    font-size: 5rem;
+    color: var(--white_thunder);
+    z-index: 10000;
+}
+
+#temperatura{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 30px;
+    transform: rotate(180deg);
+}
+
+#barra{
+    width: 30px;
+    height: 300px;
+    position: absolute;
+    align-self: flex-start;
+    background-color: var(--blue_thunder);
+    border-radius: 20px;
+}
+
+#fondo{
+    width: 30px;
+    height: 300px;
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.mediciones{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#circulo{
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+
+@keyframes growProgressBar_velocity {
+    0%, 10% { --pgPercentage_velocity: 0; }
+    100% { --pgPercentage_velocity: var(--velocity); }
+  }
+  
+
+@property --pgPercentage_velocity {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+#circuloExterno{
+    --pgPercentage_velocity: var(--velocity);
+    animation: growProgressBar_velocity 2s 1 forwards;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: conic-gradient(var(--light_blue_thunder) calc(var(--pgPercentage_velocity) * 1%), var(--dark_gray_thunder) 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circuloInterno{
+    position: relative;
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    background-color: var(--gray_thunder);
+}
