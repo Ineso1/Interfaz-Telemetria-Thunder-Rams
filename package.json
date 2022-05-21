@@ -10,6 +10,7 @@
   "author": "Ines Alejandro Garcia Mosqueda",
   "license": "ISC",
   "dependencies": {
-    "electron": "^18.2.4"
+    "electron": "^18.2.4",
+    "serialport": "^10.4.0"
   }
 }
