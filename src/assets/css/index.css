@@ -143,4 +143,47 @@ body{
     height: 400px;
     width: 100%;
   }
+
+
+#containerX, #containerY, #containerZ {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    perspective: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+
+  }
   
+  #cube {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  
+  #cube figure {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 2px solid black;
+  }
+  
+  #cube .back {
+    width: 50%;
+    height: 50%;
+    transform:translate(50%, 50%);
+    background: hsla(300, 74%, 53%, 0.5);
+  }
+
+  #cube .left {
+    background: hsla(217, 100%, 50%, 0.521);
+    transform: rotateY(90.01deg)
+  }
+  #cube .bottom {
+    background: hsla(125, 100%, 50%, 0.488);
+    transform: rotateX(90.01deg)
+  } 

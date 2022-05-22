@@ -1,6 +1,11 @@
 const velocimetro = document.getElementById("velocimetro");
 const barra = document.getElementById("barra");
 const velocimetroCircular = document.getElementById("circuloExterno")
+const containerX = document.getElementById("containerX")
+const containerY = document.getElementById("containerY")
+const containerZ = document.getElementById("containerZ")
+
+
 
 
 let vel = 0;
@@ -9,7 +14,7 @@ let tamanoBarra = 300;
 let coeficienteTempertaura = temperaturaMaxima/tamanoBarra;
 let map;
 let localizacionPunto = { lat: 20.733248248178917, lng: -103.45446640854378 }; //Punto de prueba
-
+let inicializacion = false;
 //Funcion de inicializacion de mapa de google maps
 function initMap(localizacion) {
         
@@ -39,7 +44,16 @@ window.api.onCount((data) => {
         barra.style.height = `${tamanoBarra}px`;
     }
     
-    velocimetroCircular.style = `--velocity: ${vel}`
+    velocimetroCircular.style = `--velocity: ${vel}`;
+    anguloX = 0;
+    anguloY = arr[1];
+    anguloZ = arr[2];
+
+    containerX.style = 'transform: rotateX(' + anguloX + 'deg);)';
+    containerY.style = 'transform: rotateY(' + anguloY + 'deg);)';
+    containerZ.style = 'transform: rotateZ(' + anguloZ + 'deg);)';
+
     window.initMap = initMap(localizacionPunto);
 })
 
+.attr('style', 'transform: rotateX(' + angX + 'deg) rotateY(' + angY + 'deg);')
