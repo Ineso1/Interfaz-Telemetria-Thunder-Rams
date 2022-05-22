@@ -55,5 +55,3 @@ window.api.onCount((data) => {
 
     window.initMap = initMap(localizacionPunto);
 })
-
-.attr('style', 'transform: rotateX(' + angX + 'deg) rotateY(' + angY + 'deg);')
