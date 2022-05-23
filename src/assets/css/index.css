@@ -44,12 +44,13 @@ body{
 
 .box-container{
     width: 100%;
-    height: 100vh;
-    display: flex;
+    height: 80vh;
+    /*display: flex;
     flex-direction: column;
-    position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
+    position: relative;
+    display: inline-block;
     color: var(--white_thunder);
 }
 
@@ -57,12 +58,13 @@ body{
     position: absolute;
     display: block;
     font-weight: bolder;
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--white_thunder);
     z-index: 10000;
 }
 
 #temperatura{
+    margin-left: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,19 +92,16 @@ body{
 }
 
 .mediciones{
+    position: absolute;
     width: 100%;
     height: 50vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    z-index: 1000;
 }
 
 #circulo{
-    margin-top: 50px;
-    width: 200px;
-    height: 200px;
+    margin:0 auto;
+    width: 150px;
+    height: 150px;
 }
 
 
@@ -140,10 +139,16 @@ body{
 
 
 #map {
-    height: 400px;
+    height: 100%;
     width: 100%;
   }
 
+#acelerometro{
+    margin-left: 100px;
+    margin-bottom: 100px;
+    position: absolute;
+    display: inline-block;
+}
 
 #containerX, #containerY, #containerZ {
     width: 200px;
