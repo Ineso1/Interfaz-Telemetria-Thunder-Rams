@@ -17,6 +17,10 @@ html{
     --light_blue_thunder: #0ec4bf;
     --gray_thunder: #304041;
     --dark_gray_thunder: #1e2324;
+    --purple_thunder: #311262aa;
+    --dark_blue_thunder: #0c253a;
+    --pink_title: #F5369C;
+
 }
 
 
@@ -25,6 +29,9 @@ body{
     background-color: var(--gray_thunder);
 }
 
+main{
+    display: flex;
+}
 
 #header-container{
     z-index: 10000;
@@ -42,14 +49,11 @@ body{
     height:100px;
 }
 
-.box-container{
-    width: 100%;
+#map-container{
+    width: 60%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
     position: relative;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     color: var(--white_thunder);
 }
 
@@ -57,12 +61,13 @@ body{
     position: absolute;
     display: block;
     font-weight: bolder;
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--white_thunder);
     z-index: 10000;
 }
 
 #temperatura{
+    margin-left: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,19 +95,16 @@ body{
 }
 
 .mediciones{
+    position: absolute;
     width: 100%;
     height: 50vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    z-index: 1000;
 }
 
 #circulo{
-    margin-top: 50px;
-    width: 200px;
-    height: 200px;
+    margin:0 auto;
+    width: 150px;
+    height: 150px;
 }
 
 
@@ -140,10 +142,16 @@ body{
 
 
 #map {
-    height: 400px;
+    height: 100%;
     width: 100%;
   }
 
+#acelerometro{
+    margin-left: 100px;
+    margin-bottom: 100px;
+    position: absolute;
+    display: inline-block;
+}
 
 #containerX, #containerY, #containerZ {
     width: 200px;
@@ -187,3 +195,38 @@ body{
     background: hsla(125, 100%, 50%, 0.488);
     transform: rotateX(90.01deg)
   } 
+
+  #data-container{
+      width: 40%;
+      height: 100vh;
+      background-color: var(--dark_blue_thunder);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+
+  .data{
+      position: relative;
+      display: inline-block;
+      width: 400px;
+      color: white;
+      background-color: var(--purple_thunder);
+      border-radius: 20px;
+      margin: 20px 20px;
+  }
+
+  .data h3 {
+      color: var(--pink_title);
+      padding: 15px 0 10px 20px;
+      font-size: 1.8rem;
+  }
+
+  .data h4 {
+    color: var(--white_thunder);
+    padding: 0 0 10px 40px;
+    font-size: 1.5rem;
+    }
+
+
+  

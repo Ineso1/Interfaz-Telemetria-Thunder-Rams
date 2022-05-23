@@ -9,14 +9,13 @@
     <title>Thunder Rams</title>
 </head>
 <body>
-    <header>
+    <!--<header>
         <div id="header-container">
             <img id = "logoThunder" src="../assets/img/thunderLogo.png" alt="Logo">
         </div>
-    </header>
+    </header>-->
     <main>
-        <section class="box-container">
-            <div id="map"></div>
+        <section id="map-container">
             <section class="mediciones">
                 <div id="circulo">
                     <div id="circuloExterno">
@@ -28,18 +27,43 @@
                     <div id="barra"></div>
                     <div id="fondo"></div>
                 </div>
-                <div id="containerX">
-                    <div id="containerY">
-                        <div id="containerZ">
-                            <div id="cube">
-                            <figure class="back"></figure>
-                            <figure class="left"></figure>
-                            <figure class="bottom"></figure>
+                <div id="acelerometro">
+                    <div id="containerX">
+                        <div id="containerY">
+                            <div id="containerZ">
+                                <div id="cube">
+                                <figure class="back"></figure>
+                                <figure class="left"></figure>
+                                <figure class="bottom"></figure>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <div id="map"></div>
+        </section>
+        <section id="data-container">
+            <div class="data">
+                <h3>Coordenadas geograficas</h3>
+                <h4>Lat: 20.733248248178917</h4>
+                <h4>Lng: -103.45446640854378</h4>
+            </div>
+            <div class="data">
+                <h3>Motor</h3>
+                <h4>Velocidad: 15 km/h</h4>
+                <h4>Torque: 150Nm</h4>
+                <h4>RPM: 200</h4>
+                <h4>Bateria: 90%</h4>
+            </div>
+            <div class="data">
+                <h3>Factores</h3>
+                <h4>Temperatura: 40°</h4>
+                <h3>Rotacion</h3>
+                <h4>X: 2°</h4>
+                <h4>Y: 10°</h4>
+                <h4>Z: 20°</h4>
+            </div>
         </section>
     </main>
     <script src="menu.js"></script>

@@ -20,7 +20,7 @@ function initMap(localizacion) {
         
     map = new google.maps.Map(document.getElementById("map"), {
     center: localizacion,
-    zoom: 20,});
+    zoom: 15,});
 
     let marker = new google.maps.Marker({
         position: localizacion,
