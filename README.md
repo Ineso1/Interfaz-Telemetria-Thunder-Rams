@@ -10,3 +10,9 @@ This project is a telemetry system designed to monitor a prototype electric car 
 ![59D202BB-E54F-4781-AC39-E2DDFB5707AF](https://user-images.githubusercontent.com/84602829/214516602-d6e7a621-120f-4c1e-addc-a1252cc7b9ae.jpg)
 
 ![8384CCF8-0F43-4935-98E4-B74A7C290345](https://user-images.githubusercontent.com/84602829/214516614-5d99aad1-ad40-4f00-9b56-940320549174.jpg)
+
+
+Update of the telemetry dashboard
+https://github.com/Ineso1/Interfaz-telemetria-Thunder-Rams-Pits
+
+![b259186b-5f28-4180-a5f1-f463ab0cf567](https://user-images.githubusercontent.com/84602829/214519354-ff6dacb4-5444-4a80-aa88-927df2fcaecf.jpg)
